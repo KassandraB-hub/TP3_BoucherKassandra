@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="index.js" type="application/javascript"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/components.css">
@@ -34,7 +35,7 @@
                             <a class="header__link nav-link" href="personnages.html">Personnages</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="adventures.html">Adventures</a>
+                            <a class="header__link nav-link" href="adventures.html">Aventures</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +47,7 @@
     <br>
     <main class="container">
         <section>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/hero-huntress.jpg" class="d-block w-100" alt="Image de huntress">
@@ -73,7 +74,7 @@
                         <img src="img/hero-vampire.jpg" class="d-block w-100" alt="Image de vampire">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Précédent</span>
@@ -84,31 +85,30 @@
                     <span class="visually-hidden">Suivant</span>
                 </button>
             </div>
-            </div>
         </section>
         <br>
         <br>
         <hr>
         <section class="container">
-            <div class="text-center text-md-start col-12 col-md-7 col-xl-7">
-                <h2>Nouveaux personnage à venir</h2>
-                <p>Plusieurs de ses personnages seront disponible qu'en version anglaise pour le moment. Voici les deux
+            <div class="text-center text-md-start col-12 col-md-12 col-xl-12">
+                <h2>Nouveaux personnages à venir</h2>
+                <p>Plusieurs de ses personnages ne seront disponibles qu'en version anglaise pour le moment. Voici les deux
                     extensions à venir :</p>
             </div>
             <br>
             <h3 class="row justify-content-center">Extension Vanguard</h3>
             <div class="row justify-content-center">
-                <div class="card custom__bg-card m-2 mb-2 col-1 col-md-4 col-xl-3">
+                <div class="card custom__bg-card m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/druid.png" class="card-img-top" alt="Image personnage de dice throne : druid">
                 </div>
-                <div class="card custom__bg-card m-2 mb-2 col-1 col-md-4 col-xl-3">
+                <div class="card custom__bg-card m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/sun.elf.png" class="card-img-top" alt="Image personnage de dice throne : sun elf">
                 </div>
-                <div class="card custom__bg-card m-2 mb-2 col-1 col-md-4 col-xl-3">
+                <div class="card custom__bg-card m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/forgemaster.png" class="card-img-top"
                         alt="Image personnage de dice throne : forge master">
                 </div>
-                <div class="card custom__bg-card m-2 mb-2 col-1 col-md-4 col-xl-3">
+                <div class="card custom__bg-card m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/duelist.png" class="card-img-top" alt="Image personnage de dice throne : duelist">
                 </div>
             </div>
@@ -116,19 +116,19 @@
             <br>
             <h3 class="row justify-content-center">Extension Outcast</h3>
             <div class="row justify-content-center">
-                <div class="card custom__bg-card d-flex  m-2 mb-2 col-3 col-md-4 col-xl-3">
+                <div class="card custom__bg-card d-flex  m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/headless.horseman.jpg" class="card-img-top same-size"
                         alt="Image personnage de dice throne : headless horseman">
                 </div>
-                <div class="card custom__bg-card m-2 mb-2 col-3 col-md-4 col-xl-3">
+                <div class="card custom__bg-card m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/necro.mancer.jpg" class="card-img-top same-size"
                         alt="Image personnage de dice throne : necro mancer">
                 </div>
-                <div class="card custom__bg-card m-2 mb-2 col-3 col-md-4 col-xl-3">
+                <div class="card custom__bg-card m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/pale.lady.png" class="card-img-top same-size"
                         alt="Image personnage de dice throne : pale lady">
                 </div>
-                <div class="card custom__bg-card m-2 mb-2 col-3 col-md-4 col-xl-3">
+                <div class="card custom__bg-card m-2 mb-2 col-12 col-md-4 col-xl-2">
                     <img src="img/raveness.png" class="card-img-top same-size"
                         alt="Image personnage de dice throne : raveness">
                 </div>
@@ -140,13 +140,13 @@
     <footer class="footer mt-auto">
         <div class="footer__container container">
             <div class="footer__contact d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <div class="footer__left d-flex flex-column">
+                <div class="footer__left d-flex flex-column col-12 col-md-6">
                     <span class="footer__names mb-2 mb-md-0">Experte en jeux de table</span>
                     <span class="footer__phone">
                         <i class="bi bi-telephone me-1"></i>819-437-8255
                     </span>
                 </div>
-                <div class="footer__right d-flex flex-column text-md-end">
+                <div class="footer__right d-flex flex-column text-md-end col-12 col-md-6">
                     <span class="footer__email">
                         <i class="bi bi-envelope me-1"></i>Kass.soireejeux@hotmail.com
                     </span>

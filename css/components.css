@@ -1,85 +1,85 @@
 /* Header */
-.header{
+.header {
   background-color: var(--bs-header-footer);
 
   & .header__logo {
-  max-height: 120px;
-  height: auto;
-  box-shadow: none;
+    max-height: 120px;
+    height: auto;
+    box-shadow: none;
   }
 
   & .header__toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237,237,237,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237,237,237,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
   & .header__toggler:focus {
-  border-radius: 4px;
+    border-radius: 4px;
   }
 
   & .header__link {
-  color: var(--bs-headfoot-font-color);
-  font-family: var(--bs-font-roboto);
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 300;
+    color: var(--bs-headfoot-font-color);
+    font-family: var(--bs-font-roboto);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
   }
 
   & .header__link:hover {
-  background-color: var(--bs-interactive-elements);
+    background-color: var(--bs-interactive-elements);
   }
 }
 
 /*Body*/
-Body{
+Body {
   background-color: var(--bs-primary);
   font-family: var(--bs-font-roboto);
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5,h6 {
   color: var(--bs-secondary);
   font-family: var(--bs-font-cinzel);
 }
 
-p{
+p {
   font-size: 20px;
 }
 
-hr{
+hr {
   border-top: 2px solid var(--bs-decorative-elements);
 }
 
-.accordion{
+.accordion {
   margin: 20px auto;
   box-shadow: 0 0 15px var(--bs-font-color);
   border-radius: 5px;
   overflow: hidden;
 }
 
-.accordion-item{
+.accordion-item {
   background-color: var(--bs-headfoot-font-color);
   border-color: var(--joker-black);
 }
 
-.accordion-button{
-  background-color:var(--bs-header-footer);
+.accordion-button {
+  background-color: var(--bs-header-footer);
   color: var(--bs-headfoot-font-color);
 }
 
 /* Boutons */
-.btn{
+.btn {
   background-color: var(--bs-button);
   border: none;
   margin-bottom: 1rem;
 
-  &:hover{
+  &:hover {
     background-color: var(--bs-interactive-elements);
   }
 }
 
 ul {
-  list-style-type: none; 
-  padding: 0;           
-  margin: 0;          
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 li a {
@@ -97,7 +97,8 @@ li a {
   color: var(--bs-headfoot-font-color);
   padding: 1rem 0;
 
-  & .footer__adress, .footer__email {
+  & .footer__adress,
+  .footer__email {
     text-align: right;
   }
 }

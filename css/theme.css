@@ -3,14 +3,14 @@
 :root {
   /* === Palette de couleurs === */
   --bs-primary: #708090;
-  --bs-secondary:#A50000;
+  --bs-secondary: #A50000;
   --bs-font-color: black;
-  --bs-button :#003366;
-  --bs-header-footer:#003366;
+  --bs-button: #003366;
+  --bs-header-footer: #003366;
   --bs-headfoot-font-color: white;
-  --bs-interactive-elements:#4B8B3B;
-  --bs-decorative-elements:#FFD700;
-  
+  --bs-interactive-elements: #4B8B3B;
+  --bs-decorative-elements: #FFD700;
+
 
   /* Police*/
   --bs-font-cinzel: 'Cinzel', serif;
@@ -22,4 +22,3 @@
   --bs-border-radius: 0.25rem;
   --bs-border-radius-lg: 0.25rem;
 }
-

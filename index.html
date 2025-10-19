@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="index.js" type="application/javascript"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/components.css">
@@ -30,21 +31,14 @@
                             <a class="header__link nav-link" href="index.html">Accueil</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="personnages.html" oneclick="openForm()">Personnages</a>
+                            <a class="header__link nav-link" href="personnages.html"
+                                onclick="openForm()">Personnages</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="adventures.html">Adventures</a>
+                            <a class="header__link nav-link" href="adventures.html">Aventures</a>
                         </li>
                     </ul>
                 </div>
-                <script>
-                    function openForm() {
-                        document.getElementById("popupForm").style.display = "block";
-                    }
-                    function closeForm() {
-                        document.getElementById("popupForm").style.display = "none";
-                    }
-                </script>
             </div>
         </nav>
     </header>
@@ -53,21 +47,21 @@
         <br>
         <br>
         <section>
-            <div>
+            <div class="container">
                 <h1>Dice Throne</h1>
                 <video id="video-background" src="Vidéo/vidéo.mp4" autoplay loop controls>
-                    Votre naviguateur ne peut afficher cette vidéo.
+                    Votre naviguateur ne peut pas afficher cette vidéo.
                 </video>
             </div>
             <br>
             <div class="container d-flex align-items-center justify-content-center flex-wrap">
-                <div class="row justify-content-center m-1 mb-3 col-4 col-md-4 col-xl-3">
+                <div class="row justify-content-center m-1 mb-3 col-3 col-md-3 col-xl-3">
                     <img src="img/plateau.jpeg" class="card-img-top" alt="Plateau de Dice throne">
                 </div>
-                <div class="row justify-content-center m-1 mb-3 col-4 col-md-4 col-xl-3">
+                <div class="row justify-content-center m-1 mb-3 col-3 col-md-3 col-xl-3">
                     <img src="img/personnages.jpg" class="card-img-top" alt="Personnages de Dice throne">
                 </div>
-                <div class="row justify-content-center m-1 col-4 col-md-4 col-xl-3">
+                <div class="row justify-content-center m-1 col-3 col-md-3 col-xl-3">
                     <img src="img/aventures.jpeg" class="card-img-top" alt="Dice throne Aventures">
                 </div>
             </div>
@@ -79,15 +73,15 @@
         <br>
         <br>
         <section>
-            <div class="container text-center align-items-center justify-content-center">
+            <div class="container text-center align-items-center justify-content-center col-7 col-md-8 col-xl-10">
                 <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4">
-                        <h2>Description du jeux</h2>
+                    <div>
+                        <h2>Description du jeu</h2>
                         <p>Dice Throne est un jeu d'affrontement rapide combinant la mécanique des dés (type Poker de
-                            dés) et des cartes , où chaque joueur incarne un héros uniquepour tenter de réduire les
-                            points de viede son adversaire à zéro. Chaque tournée sedéroule en plusieurs phases. </p>
+                            dés) et des cartes , où chaque joueur incarne un héros unique pour tenter de réduire les
+                            points de vie de son adversaire à zéro. Chaque tour se déroule en plusieurs phases. </p>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div>
                         <h2>Critiques du jeux</h2>
                         <p>Facile à apprendre, difficile à maîtriser : Les règles de base sont simples, permettant de se
                             lancer rapidement dans l'action. Cependant, la vraie profondeur du jeu réside dans la
@@ -95,7 +89,8 @@
                             l'adversaire.</p>
                     </div>
                     <div class="w-100 d-none d-md-block"></div>
-                    <div class="col-6 col-sm-4">
+                    <div
+                        class="container text-center align-items-center justify-content-center col-7 col-md-8 col-xl-10">
                         <h2>À propos</h2>
                         <p>Souvent décrit par les nouveaux joueurs comme un mélange de Yahtzee et de Magic: The
                             Gathering, Dice Throne est un jeu de cartes et de dés rapide et stratégique pour 2 à 6
@@ -104,9 +99,9 @@
                             jeux les plus faciles à prendre en main. Dice Throne deviendra le pilier de votre
                             collection.</p>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div>
                         <h2>Où l'acheter au Canada</h2>
-                        <ul>
+                        <ul id="zoneSurvol">
                             <li><a href="https://www.randolph.ca/" target="_blank">Randolph</a></li>
                             <li><a href="https://www.lillojeux.ca/" target="_blank">LilloJEUX</a></li>
                             <li><a href="https://imaginaire.com/" target="_blank">Imaginaire</a></li>
@@ -118,19 +113,52 @@
                 </div>
             </div>
         </section>
+        <br>
+        <hr>
+        <br>
+        <section>
+            <h2 class="text-center">Formulaire de contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nom" tabindex="0">Nom et prénom</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom et prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="courriel" tabindex="0">Adresse courriel</label>
+                    <input type="email" class="form-control" id="courriel" placeholder="nom@exemple.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="FormControlSelect1" tabindex="0">En quoi pouvons-nous vous aider ?</label>
+                    <select class="form-control" id="FormControlSelect1">
+                        <option>Difficultés reliées aux règles</option>
+                        <option>Difficultés reliées au fonctionnement</option>
+                        <option>Difficultés reliées au personnage</option>
+                        <option>Autres difficultées reliées au jeu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="commentaires" tabindex="0">Commentaires</label>
+                    <textarea class="form-control" id="commentaires" rows="3" required></textarea>
+                </div>
+                <br>
+                <button type="button" onclick="sendForm('message', 'nom')" class="btn btn-primary">Envoyer</button>
+
+            </form>
+            <p id="message"></p>
+        </section>
     </main>
     <br>
     <br>
     <footer class="footer mt-auto">
         <div class="footer__container container">
             <div class="footer__contact d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <div class="footer__left d-flex flex-column">
+                <div class="footer__left d-flex flex-column col-12 col-md-6">
                     <span class="footer__names mb-2 mb-md-0">Experte en jeux de table</span>
                     <span class="footer__phone">
                         <i class="bi bi-telephone me-1"></i>819-437-8255
                     </span>
                 </div>
-                <div class="footer__right d-flex flex-column text-md-end">
+                <div class="footer__right d-flex flex-column text-md-end col-12 col-md-6">
                     <span class="footer__email">
                         <i class="bi bi-envelope me-1"></i>Kass.soireejeux@hotmail.com
                     </span>
