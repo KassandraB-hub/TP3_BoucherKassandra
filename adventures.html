@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="index.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Personnages</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Personnages</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="header__navbar navbar navbar-expand-lg">
+                <div class="header__container container">
+                    <a class="header__brand navbar-brand"
+                        href="file:///E:/%C3%89cole/2E%20SESSION%20(JUIN%20A)/TP/LUNDI/TP3/TP3_BoucherKassandra-main/index.html">
+                        <img class="header__logo" src="img/logo.png" alt="Logo">
+                    </a>
+                    <button class="header__toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#headerNavContent" aria-controls="headerNavContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="header__toggler-icon navbar-toggler-icon"></span>
+                    </button>
+                    <div class="header__collapse collapse navbar-collapse" id="headerNavContent">
+                        <ul class="header__nav navbar-nav ms-md-auto mb-2 mb-lg-0 text-center text-md-start">
+                            <li class="header__item nav-item">
+                                <a class="header__link nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="header__item nav-item">
+                                <a class="header__link nav-link" href="personnages.html">Personnages</a>
+                            </li>
+                            <li class="header__item nav-item">
+                                <a class="header__link nav-link" href="adventures.html">Adventures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <main class="container">
+            <div id="loupe"></div>
+            <section>
+                <div class="container">
+                    <h2>BIENVENUE DANS LE MODE AVENTURES</h2>
+                    <div class="img-zoom-container">
+                        <img id="theimage" src="img/aveventures.bordgame.jpg"
+                            alt="Plateau de jeux de dice throne aventures">
+                        <div id="myresult" class="img-zoom-result"></div>
+                    </div>
+                    <script>
+                        imageZoom("theimage", "myresult"); 
+                    </script>
+                    <br>
+                    <h3>De solo à coopératif </h3>
+                    <p>Dice Throne Adventures est une extension coopérative pour le jeu compétitif Dice Throne qui le
+                        transforme en un donjon de style campagne pour 1 à 4 joueurs. Les joueurs forment une équipe de
+                        héros pour progresser à travers une série de scénarios, affrontant serviteurs et boss pour
+                        vaincre le Roi Fou. Au fil de leur progression , ils collectent butin et or pour améliorer
+                        durablement leurs decks et les rendre plus puissants au fil de la campagne. </p>
+                </div>
+
+
+                <h4>Ce que l'extension ajoute :</h4>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Nouveau mode de jeu :
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Transforme le duel compétitif 1 contre 1 du jeu de base en une
+                                aventure coopérative.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Progression de la campagne :
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Permet aux joueurs de voir leurs héros grandir au cours d'une
+                                campagne multi-sessions, contrairement aux duels ponctuels du jeu de base.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Butin et améliorations :
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> Introduit un système de butin inspiré de jeux comme Diablo,
+                                avec des récompenses telles que des trésors et des cartes qui sont ajoutées au deck d'un
+                                héros de manière permanente.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Nouveaux défis :
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> Présente de nouveaux serviteurs, scénarios et ennemis de niveau
+                                boss avec des capacités uniques qui nécessitent une coopération stratégique pour être
+                                surmontées.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section>
+                <div class="container">
+                    <h2>BOSS VS BOSS</h2>
+                    <p>Boss vs Boss" est une variante créée par des fans pour Dice Throne Adventures, oùles joueurs
+                        utilisent des personnages boss les uns contre les autres au lieu de se battre contre un boss
+                        IAPour jouer , utilisez les règles d'une partie en équipe classique, mais choisissez des boss
+                        plutôt que des héros standards. Il est recommandé de terminer d'abord la campagne standard pour
+                        vous familiariser avec les boss et leurs capacités avant de tenter cette variante.</p>
+                </div>
+                <div class="container">
+                    <ul class="list">
+                        <li>Mode non officiel : Il ne s'agit pas d'un mode de jeu standard, mais d'une variante
+                            populaire pour une expérience amusante et stimulante.</li>
+                        <li>Gameplay déséquilibré : Comme le mode n'est pas officiellement équilibré pour deux joueurs,
+                            le boss d'un joueur peut être beaucoup plus fort que l'autre.</li>
+                        <li>Règlement officiel : Les règles officielles « Boss vs. Many » peuvent être adaptées à cette
+                            variante, y compris les règles relatives aux actions et aux capacités du boss.</li>
+                        <li>Butin et améliorations : Les joueurs peuvent personnaliser leurs decks de héros avec du
+                            butin et des améliorations avant le match, ce qui peut également affecter l'équilibre du
+                            match.</li>
+                        <li>Objectif du jeu : L'objectif est toujours de vaincre l'autre boss en réduisant sa santé à
+                            zéro, mais avec des règles officielles, il peut également être joué avec des objectifs de
+                            scénario spécifiques.</li>
+                    </ul>
+                    </li>
+                </div>
+                <br>
+                <div class="container">
+                    <button class="btn">
+                        <a href="https://www.youtube.com/watch?app=desktop&v=jYmtthicY50&t=344" target="_blank"
+                            style="text-decoration: none; color: white;">Voir la vidéo explicative</a>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <br>
+        <br>
+        <footer class="footer mt-auto">
+            <div class="footer__container container">
+                <div class="footer__contact d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <div class="footer__left d-flex flex-column">
+                        <span class="footer__names mb-2 mb-md-0">Experte en jeux de table</span>
+                        <span class="footer__phone">
+                            <i class="bi bi-telephone me-1"></i>819-437-8255
+                        </span>
+                    </div>
+                    <div class="footer__right d-flex flex-column text-md-end">
+                        <span class="footer__email">
+                            <i class="bi bi-envelope me-1"></i>Kass.soireejeux@hotmail.com
+                        </span>
+                        <span class="footer__adress">
+                            <i class="bi bi-geo-alt me-1"></i>305 rue louis-bureau, Sherbrooke, QC, J1E 0A8
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
